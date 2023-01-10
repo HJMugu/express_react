@@ -1,3 +1,5 @@
+//see fail paneb App.js t66le, app.jsis toimuvad minu asjad
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
