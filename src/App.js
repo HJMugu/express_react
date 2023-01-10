@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import "./components/Expenseitem"
+
+
 import Expenseitem from "./components/Expenseitem";
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         </a>
       </header>
       <Expenseitem></Expenseitem>
-     //
+
     </div>
   );
 }
