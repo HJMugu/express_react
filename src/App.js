@@ -4,23 +4,26 @@ import './App.css';
 
 import Expenseitem from "./components/Expenseitem";
 function App() {
+  const expenses = [
+    {
+      date: new Date(2023,0,10),
+      title: "new book",
+      price: 30.99
+    },
+    {
+      date: new Date(2023,0,6),
+      title: "ice cream",
+      price: 3.50
+    }
+  ]
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Expenseitem></Expenseitem>
+
+      <Expenseitem expenseData={expenses[0]}></Expenseitem>
+        <Expenseitem expenseData={expenses[1]}></Expenseitem>
 
     </div>
   );
